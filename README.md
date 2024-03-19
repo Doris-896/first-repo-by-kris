@@ -14,8 +14,8 @@
 1. Run this command: "git clone https://github.com/Doris-896/first-repo-by-kris.git"
 2. cd first-repo-by-kris
 3. code . ==> open visual studio code
-4. yarn install (If you have not installed yarn yet, please use "npm install --global yarn")
-5. yarn start
+4. npm install
+5. npm start
 
 * Git flow - pull:
 - Stand in master
