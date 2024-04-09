@@ -21,7 +21,7 @@
     transition: all 0.2s linear;
 }
 
-.spinner.toggle.active{
+.spinner.active{
     transform: translateX(50px);
 }
 
