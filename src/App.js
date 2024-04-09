@@ -1,14 +1,11 @@
 import "./App.css";
-import YoutubeList from "./components/youtube/YoutubeList";
+import Toggle from "./components/state/Toggle";
 
-// shift + alt + F -> format
 function App() {
   const name = 'Dolly chinhh'
   return (
     <div>
-      <YoutubeList>                 
-        {name}
-      </YoutubeList>
+      <Toggle></Toggle>
     </div>
   );
 }

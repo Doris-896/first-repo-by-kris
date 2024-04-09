@@ -1,14 +1,24 @@
 import React, { useState } from "react";
+import "./ToggleStyle.css";
 
-// stateless functional component: component nhưng khôn sử dụng state
 function Toggle() {
-    return <div className="toggle"></div>
+  const [on, setOn] = useState(false); /*setOn là callback function*/
+  console.log(on);
+  return (
+    <div>
+      <div className={`toggle ${on ? "active" : ""}`}>
+        <div className={`spinner ${on ? "active" : ""}`}></div>
+      </div>
+      <div className="toggle-control">
+        <div className="toggle-on" onClick={() => setOn(true)}>
+          On
+        </div>
+        <div className="toggle-off" onClick={() => setOn(false)}>
+          Off
+        </div>
+      </div>
+    </div>
+  );
 }
 
-// stateful functional component: component sử dụng state
-function Toggle2() {
-    const [count, setCount] = useState();               //Đây là Hook
-    return (
-        <div className='toggle'></div>
-    )
-}
+export default Toggle;
