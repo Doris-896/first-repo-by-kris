@@ -10,9 +10,8 @@ export function calculateWinner(cells) {
     [2, 4, 6],
   ];
   for (let index = 0; index < lines.length; index++) {
-    const [a, b, c] = lines[index]; //destructuring
+    const [a, b, c] = lines[index];
     if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
-      //truy xuất vị trí index là ngoặc vuông
       return cells[a];
     }
   }
