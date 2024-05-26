@@ -1,7 +1,7 @@
-function Content() {
+function FirstContent() {
     return(
         <h1> Hi everyone</h1>
     )
 }
 
-export default Content
+export default FirstContent
