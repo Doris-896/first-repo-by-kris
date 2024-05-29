@@ -12,7 +12,7 @@ const RandomNumberList = ({ count }) => {                                       
   const randomNumbers = useMemo(() => generateRandomNumbers(), [generateRandomNumbers]);        //nếu hàm generateRandomNumbers thay đổi (do count thay đổi), React sẽ gọi lại hàm này để tạo ra một kết quả mới.
   return (                                                                                      //Nếu generateRandomNumbers không thay đổi giữa các lần render, React sẽ sử dụng lại kết quả được memoized từ lần render trước đó.
     <ul>
-      {randomNumbers.map((number, index) => (
+      {randomNumbers.map((number, index) => (                                                   //kết xuất ra number tương ứng với index
         <li key={index}>{number}</li>
       ))}
     </ul>
